@@ -8,14 +8,14 @@ import (
 func main() {
 
 	var (
-		currency string = "грн"
-		pieces string = "шт."
 		applesToBuy = 9
 		pearsToBuy = 8
 		balance = 23.00
 	)
 
 	const (
+		currency string = "грн"
+		pieces string = "шт."
 		applePrice = 5.99
 		pearPrice = 7.00
 	)
@@ -29,7 +29,7 @@ func main() {
 	pearsToBuy = 2
 
 	// 4. Чи ми можемо купити 2 груші та 2 яблука?
-	
+
 	if (applePrice*float64(applesToBuy)+pearPrice*float64(pearsToBuy) <= balance) {
 		fmt.Println("4. Чи ми можемо купити 2 груші та 2 яблука? - Так")
 	} else {
