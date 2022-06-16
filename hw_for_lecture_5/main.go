@@ -22,5 +22,10 @@ func main() {
 	fmt.Println("3. Скільки яблук ми можемо купити?", math.Floor(balance/applePrice), pieces)
 	applesToBuy = 2
 	pearsToBuy = 2
-	fmt.Println("4. Чи ми можемо купити 2 груші та 2 яблука?", applePrice*float64(applesToBuy)+pearPrice*float64(pearsToBuy) <= balance)
+
+	if (applePrice*float64(applesToBuy)+pearPrice*float64(pearsToBuy) <= balance) {
+		fmt.Println("4. Чи ми можемо купити 2 груші та 2 яблука? - Так")
+	} else {
+		fmt.Println("4. Чи ми можемо купити 2 груші та 2 яблука? - Ні")
+	}
 }
